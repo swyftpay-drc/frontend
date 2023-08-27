@@ -24,7 +24,7 @@ export const RightClipPath = () => {
           y="0"
           width="4"
           height="4"
-          className="text-primary-color/60"
+          className="text-primary-900/60"
           fill="currentColor"
         />
       </pattern>

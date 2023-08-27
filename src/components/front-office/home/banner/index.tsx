@@ -23,7 +23,7 @@ const Banner = () => {
                </div>
 
               <div className="pt-3">
-                <Button handleClick={(e) => {}} variant="outlined">S&apos;inscrire maintenant</Button>
+                <Button handleClick={(e) => {}}>S&apos;inscrire maintenant</Button>
               </div>
             </div>
           </div>

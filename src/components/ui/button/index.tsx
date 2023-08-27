@@ -29,18 +29,18 @@ export const Button: React.FC<Props> = ({
 }) => {
   const getVariant =()=>{
     if (variant==='contained') {
-      return 'bg-primary-color'
+      return 'bg-primary-900'
     }
     else if(variant === 'outlined') {
-      return 'border-2 border-primary-color text-primary-color hover:bg-primary-color bg-transparent hover:text-white';
+      return 'border-2 border-primary-900 text-primary-900 hover:bg-primary-900 bg-transparent hover:text-white';
     }
-    return 'bg-primary-color hover:bg-primary-color/80'
+    return 'bg-primary-900 hover:bg-primary-800 text-white'
   }
   return (
     <>
       <button
         onClick={handleClick}
-        className={`flex gap-2 items-center justify-center bg-primary-color py-3 px-8 text-white font-semibold min-w-[150px] rounded-full shadow-md disabled:focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 duration-300 ${className} ${getVariant()}`}
+        className={`flex gap-2 items-center justify-center bg-primary-900 py-3 px-8  font-semibold min-w-[150px] rounded-full shadow-md disabled:focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 duration-300 ${className} ${getVariant()}`}
       >
         {children}
         {title}

@@ -4,7 +4,7 @@ import React from "react";
 export const CercleClipPath = () => {
   return (
     <svg
-      className="absolute top-5 -right-32 text-primary-color/60 animate-ping  z-50 duration-500"
+      className="absolute top-5 -right-32 text-primary-900/60 animate-ping duration-500"
       xmlns="http://www.w3.org/2000/svg"
       stroke="currentColor"
       stroke-width="1.5"

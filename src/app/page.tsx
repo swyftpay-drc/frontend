@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       <Header />
-      <div  className="bg-tertiary-color">
+      <div className="bg-primary-400">
       <BaseContainer className="pt-32">
         <Banner />
       </BaseContainer>
