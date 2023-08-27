@@ -1,9 +1,7 @@
 import { BaseContainer } from "@/components/ui/container/BaseContainer";
-import { BaseAccordion as Accordion } from "@/components/ui/accordion";
-import Banner from "@/components/ui/banner";
+import Banner from "@/components/front-office/home/banner";
 import BannerWave from "@/components/ui/clip-path/waves/Banner";
-import Header from "@/components/ui/navbar";
-import Image from "next/image";
+import Header from "@/components/front-office/layouts/navbar";
 
 export default function Home() {
   return (
@@ -16,7 +14,6 @@ export default function Home() {
       </div>
       <BannerWave/>
       <BaseContainer >
-      <Accordion />
       </BaseContainer>
     
     
