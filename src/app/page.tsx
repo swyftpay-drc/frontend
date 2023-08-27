@@ -1,4 +1,4 @@
-import { BaseContainer } from "@/components/container/BaseContainer";
+import { BaseContainer } from "@/components/ui/container/BaseContainer";
 import { BaseAccordion as Accordion } from "@/components/ui/accordion";
 import Banner from "@/components/ui/banner";
 import BannerWave from "@/components/ui/clip-path/waves/Banner";

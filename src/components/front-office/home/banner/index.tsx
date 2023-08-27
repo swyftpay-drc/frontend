@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { CercleClipPath, LeftClipPath, RightClipPath } from "../clip-path";
-import { Button } from "../button";
+import { CercleClipPath, LeftClipPath, RightClipPath } from "@/components/ui/clip-path";
+import { Button } from "@/components/ui/button";
 import BgHiro from "@/assets/images/b.png";
 import Image from "next/image";
 const Banner = () => {
