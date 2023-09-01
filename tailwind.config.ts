@@ -14,6 +14,7 @@ module.exports = withMT({
           800:'#3D6BDC',
           900:'#291FB3',
           400:'#ebf4fe',
+          300:'#291FB3'
         },
         text: {
           primary: '#50564F',

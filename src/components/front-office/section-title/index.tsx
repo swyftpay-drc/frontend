@@ -8,7 +8,7 @@ export type SectionTitleProps = {
 const SectionTitle: React.FC<SectionTitleProps> = ({ children, title,  className }) => {
   return (
     <div>
-      <h2 className={`text-4xl text-primary-900 font-bold p-2 py-8 ${className}`}> {title}</h2>
+      <h2 className={`text-4xl text-primary-900 font-bold ${className}`}> {title}</h2>
       {children}
     </div>
   );
