@@ -2,6 +2,7 @@ import { BaseContainer } from "@/components/ui/container/BaseContainer";
 import Banner from "@/components/front-office/home/banner";
 import BannerWave from "@/components/ui/clip-path/waves/Banner";
 import Header from "@/components/front-office/layouts/navbar";
+import PaymentSection from "@/components/front-office/home/payment";
 
 export default function Home() {
   return (
@@ -14,9 +15,9 @@ export default function Home() {
       </div>
       <BannerWave/>
       <BaseContainer >
+      <PaymentSection/>
       </BaseContainer>
-    
-    
+  
     </main>
   );
 }

@@ -1,24 +1,8 @@
 "use client";
+import { IButton} from "@/types/base";
 import React, { ReactNode, useState } from "react";
-export type variant = "contained" | "outlined" | "gradient" | "text";
-export type size = "sm" | "md" | "lg";
-export type color = "white";
-export type fullWidth = boolean;
-export type ripple = boolean;
-export type className = string;
-export type children = ReactNode;
 
-export interface Props {
-  handleClick: (e: any) => void;
-  title?: string;
-  variant?: variant;
-  size?: size;
-  color?: color;
-  fullWidth?: fullWidth;
-  ripple?: ripple;
-  className?: className;
-  children: children;
-}
+export type Props = IButton
 export const Button: React.FC<Props> = ({
   handleClick,
   title,
