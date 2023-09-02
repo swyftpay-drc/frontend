@@ -24,7 +24,8 @@ export default function Header() {
    <div className="w-full bg-primary-400">
     <div className='w-full py-4 flex flex-col md:flex-row md:items-center justify-between mx-auto max-w-7xl px-4 sm:px-0'>
         <div>
-          <Logo/>
+       
+          <Link href={'/'}> <Logo/></Link>
         </div>
         <div className="md:hidden">
           <button onClick={toggleDropdown} className="text-primary-900">
