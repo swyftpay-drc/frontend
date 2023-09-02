@@ -1,5 +1,5 @@
 import { children } from "@/types/base";
-import SectionTitle from "../../section-title";
+import SectionTitle from "../../layouts/section-title";
 import PaymentCard from "./Card";
 import {IconPaint, IconCalendar, IconConfig } from "@/components/ui/icons";
 
