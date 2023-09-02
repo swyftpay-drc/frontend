@@ -33,7 +33,7 @@ export default function Header() {
         </div>
         <div className='flex gap-6'>
           <Link href={''} className='font-medium hover:text-primary-900 duration-300'>Comment ça marche</Link>
-          <Link href={''} className='font-medium hover:text-primary-900 duration-300'>A propos</Link>
+          <Link href={'/about'} className='font-medium hover:text-primary-900 duration-300'>A propos</Link>
           <Link href={''} className='font-medium hover:text-primary-900 duration-300'>Services</Link>
           <Link href={''} className='font-medium hover:text-primary-900 duration-300'>Développeurs</Link>
           <Link href={''} className='font-medium hover:text-primary-900 duration-300'>Contact</Link>
