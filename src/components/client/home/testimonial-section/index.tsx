@@ -1,6 +1,6 @@
 
 import Avatar from "@/components/ui/avatar/Avatar";
-import SectionTitle from "../../section-title";
+import SectionTitle from "../../layouts/section-title";
 import TestimonialCard from "./Card";
 import { IconPaint, IconCalendar, IconConfig } from "@/components/ui/icons";
 import Image from "next/image";

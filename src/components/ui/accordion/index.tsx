@@ -5,7 +5,7 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
-import ServiceContent from "@/components/front-office/home/service-section/ServiceContent";
+import ServiceContent from "@/components/client/home/service-section/ServiceContent";
 
 export function BaseAccordion() {
   const [open, setOpen] = React.useState(1);

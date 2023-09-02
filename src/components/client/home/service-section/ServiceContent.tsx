@@ -9,9 +9,9 @@ export type Props = {
 };
 const ServiceContent :React.FC<Props> = ({children, title, subTitle, text}) => {
   return (
-    <div className="flex gap-2">
-    <span>
-      <IconRight />
+    <div className="flex gap-3">
+     <span>
+      <IconRight className='rounded-full border-2 border-primary-900 h-8 w-8 text-white' color='#291FB3' />
     </span>
     <div className="flex flex-col gap-2">
       <h6 className="font-bold text-gray-900 text-lg">

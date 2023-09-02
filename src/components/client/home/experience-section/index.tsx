@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import SectionTitle from "@/components/front-office/section-title";
+import SectionTitle from "@/components/client/layouts/section-title";
 import ServiceImg from "@/assets/images/service.png";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
