@@ -13,7 +13,7 @@ const misssionAndVisions = [
 ];
 export const MissionVisionSection = () => {
   return (
-    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6 lg:gap-24 py-12">
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6 lg:gap-24 md:py-12">
       {misssionAndVisions.map((item, index) => (
         <Card
           title={item.titile}

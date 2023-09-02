@@ -1,4 +1,7 @@
-import { IconMenu } from './Menu';
+export { IconTeam } from './team';
+export { IconSettings } from './settings';
+export { IconGlobe } from './globe';
+export { IconMenu } from './Menu';
 export { Paint as IconPaint } from './Paint';
 export { Config as IconConfig } from './Config';
 export { Calandar as IconCalendar } from './Calandar';
