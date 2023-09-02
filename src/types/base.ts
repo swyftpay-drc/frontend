@@ -22,3 +22,14 @@ export interface IButton {
     children: children;
 
 }
+
+export interface IFooterMenus {
+    id: number;
+    subSectionTitle: string
+    menus: IMenu[]
+}
+export interface IMenu{
+    title?: string;
+    name: string;
+    path: string;
+}

@@ -24,7 +24,7 @@ export const Button: React.FC<Props> = ({
     <>
       <button
         onClick={handleClick}
-        className={`flex gap-2 items-center justify-center bg-primary-900 py-3 px-8  font-semibold min-w-[150px] rounded-full shadow-md disabled:focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 duration-300 ${className} ${getVariant()} shadow-primary-900/50`}
+        className={`flex gap-2 items-center justify-center bg-primary-900 py-3 px-8  font-semibold min-w-[150px] rounded-full shadow-md disabled:focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 duration-300 ${className} ${getVariant()} shadow-white/50`}
       >
         {children}
         {title}

@@ -7,6 +7,7 @@ import PaymentSection from "@/components/front-office/home/payment-section";
 import ServiceSection from "./service-section";
 import ExperienceSection from "./experience-section";
 import TestimonialSection from "./testimonial-section";
+import Footer from "../layouts/footer";
 
 export const Home = () => {
   return (
@@ -26,6 +27,7 @@ export const Home = () => {
       <BaseContainer>
         <TestimonialSection/>
       </BaseContainer>
+      <Footer/>
     </>
   );
 };

@@ -16,7 +16,7 @@ export const IconPlay:React.FC<Props> = ({className, color}) => {
     >
       <path
         d="M16.6667 28.3334L25 20.0001L16.6667 11.6667V28.3334Z"
-        fill={color}
+        fill='#291FB3'
       />
     </svg>
   );
