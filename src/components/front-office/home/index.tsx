@@ -6,6 +6,7 @@ import Header from "@/components/front-office/layouts/navbar";
 import PaymentSection from "@/components/front-office/home/payment-section";
 import ServiceSection from "./service-section";
 import ExperienceSection from "./experience-section";
+import TestimonialSection from "./testimonial-section";
 
 export const Home = () => {
   return (
@@ -22,6 +23,9 @@ export const Home = () => {
         <ServiceSection />
       </BaseContainer>
       <ExperienceSection/>
+      <BaseContainer>
+        <TestimonialSection/>
+      </BaseContainer>
     </>
   );
 };
