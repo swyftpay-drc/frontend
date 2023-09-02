@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Link from 'next/link'
 import { useState } from 'react'
 import { Logo } from '@/components/logo';
+import { IconMenu } from '@/components/ui/icons/Menu';
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -15,11 +16,20 @@ const navigation = [
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
+  const toggleDropdown=()=>{
+    setMobileMenuOpen(!mobileMenuOpen)
+  }
+
   return (
    <div className="w-full bg-primary-400">
     <div className='w-full py-4 flex flex-col md:flex-row md:items-center justify-between mx-auto max-w-7xl px-4 sm:px-0'>
         <div>
           <Logo/>
+        </div>
+        <div className="md:hidden">
+          <button onClick={toggleDropdown} className="text-primary-900">
+          <IconMenu/>
+          </button>
         </div>
         <div className='flex gap-6'>
           <Link href={''} className='font-medium hover:text-primary-900 duration-300'>Comment ça marche</Link>

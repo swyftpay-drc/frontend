@@ -88,7 +88,7 @@ const Footer = () => {
               {menu.subSectionTitle}
             </h6>
             {menu.menus.map((item, i) => (
-              <Link href={item.path} className="flex items-center" key={`${index}_id${i}`}>
+              <Link href={item.path} className="flex items-center hover:text-primary-900 duration-300" key={`${index}_id${i}`}>
                 <span>
                   <IconPlay />
                 </span>
@@ -108,7 +108,7 @@ const Footer = () => {
             <div className="grid grid-cols-4 gap-12">
               <div className="flex  flex-col gap-8">
                <div className="mr-12">
-               <Logo />
+                 <h2 className="text-primary-900 text-2xl font-bold">Swiftpay</h2>
                </div>
                 <p>
                   Lorem ipsum dolor sit amet consectetur. Volutpat consectetur

@@ -1,3 +1,4 @@
+import { IconMenu } from './Menu';
 export { Paint as IconPaint } from './Paint';
 export { Config as IconConfig } from './Config';
 export { Calandar as IconCalendar } from './Calandar';
