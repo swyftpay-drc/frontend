@@ -13,8 +13,8 @@ export const Home = () => {
   return (
     <>
       <Header />
-      <div className="bg-primary-400">
-        <BaseContainer className="pt-32">
+      <div className="bg-primary-400 pt-1 pb-4">
+        <BaseContainer className="pt-14">
           <BannerSection />
         </BaseContainer>
       </div>
@@ -23,11 +23,11 @@ export const Home = () => {
         <PaymentSection />
         <ServiceSection />
       </BaseContainer>
-      <ExperienceSection/>
+      <ExperienceSection />
       <BaseContainer>
-        <TestimonialSection/>
+        <TestimonialSection />
       </BaseContainer>
-      <Footer/>
+      <Footer />
     </>
   );
 };

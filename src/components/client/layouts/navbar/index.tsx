@@ -37,37 +37,41 @@ export default function Header() {
         <div className="flex gap-6">
           <Link
             href={""}
-            className="font-medium hover:text-primary-900 duration-300"
+            className="font-bold text-gray-800 hover:text-primary-900 duration-300"
           >
             Comment ça marche
           </Link>
           <Link
             href={"/about"}
-            className="font-medium hover:text-primary-900 duration-300"
+            className="font-bold text-gray-800 hover:text-primary-900 duration-300"
           >
             A propos
           </Link>
           <Link
             href={""}
-            className="font-medium hover:text-primary-900 duration-300"
+            className="font-bold text-gray-800 hover:text-primary-900 duration-300"
           >
             Services
           </Link>
           <Link
             href={""}
-            className="font-medium hover:text-primary-900 duration-300"
+            className="font-bold text-gray-800 hover:text-primary-900 duration-300"
           >
             Développeurs
           </Link>
           <Link
             href={""}
-            className="font-medium hover:text-primary-900 duration-300"
+            className="font-bold text-gray-800 hover:text-primary-900 duration-300"
           >
             Contact
           </Link>
         </div>
         <div className="flex gap-3">
-          <Button handleClick={(e) => {}} variant="outlined">
+          <Button
+            handleClick={(e) => {}}
+            variant="outlined"
+            className="pt-0 pb-0"
+          >
             Connexion
           </Button>
           <Button handleClick={(e) => {}}>Inscription</Button>
