@@ -7,6 +7,8 @@ import { MissionVisionSection } from './missio-vision-section'
 import { BaseContainer } from '@/components/ui/container/BaseContainer'
 import { OurResults } from './our-results'
 import OurTeam from './our-team'
+import Footer from '@/components/client/layouts/footer'
+import PartnersSection from '../partners-section'
 export type Props ={
     chidren?: children
 }
@@ -24,7 +26,8 @@ const About:React.FC<Props> = () => {
       <OurTeam/>
       </BaseContainer>
       </div>
-     
+      <PartnersSection/>
+      <Footer/>
     </>
   )
 }

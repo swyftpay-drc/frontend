@@ -36,7 +36,7 @@ export default function Header() {
         </div>
         <div className="flex gap-6">
           <Link
-            href={""}
+            href={"/how-kit-works"}
             className="font-medium hover:text-primary-900 duration-300"
           >
             Comment ça marche

@@ -33,8 +33,8 @@ const Ourteams = [
   ];
 const OurTeam = () => {
   return (
-    <div className='py-32 '>
-     <SectionTitle title='Notre équipe' className='text-center'/>
+    <div className='py-12'>
+     <SectionTitle title='Notre équipe' className='text-center pb-12'/>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-4 md:gap-6 lg:gap-24 py-12">
       {Ourteams.map((item, index) => (
         <CardTeam name={item.name} key={index + "_id"} role={item.role}>
