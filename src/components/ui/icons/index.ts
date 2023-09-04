@@ -1,3 +1,4 @@
+export { IconClose } from './Close';
 export { IconTeam } from './team';
 export { IconSettings } from './settings';
 export { IconGlobe } from './globe';
@@ -11,3 +12,4 @@ export {IconFacebook} from "./Facebook"
 export {IconLinkedin} from "./Linkedin"
 export {IconTwitter} from "./Twitter"
 export {IconMail} from './Mail'
+

@@ -2,77 +2,101 @@
 import { BaseContainer } from "@/components/ui/container/BaseContainer";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { useState } from "react";
+import React, { useState } from "react";
 import { Logo } from "@/components/logo";
 import { IconMenu } from "@/components/ui/icons/Menu";
+import { IconClose } from "@/components/ui/icons";
 
-const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+const navigations = [
+  { name: "Comment ça marche", path: "/how-kit-works" },
+  { name: "A propos", path: "/about" },
+  { name: "Services", path: "/" },
+  { name: "Développeurs", path: "/" },
+  { name: "Contact", path: "/" },
 ];
 
-export default function Header() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+const Navbar: React.FC = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleDropdown = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
+    setIsDropdownOpen(!isDropdownOpen);
   };
-
+  const renderNavigations = () => {
+    return (
+      <>
+        {navigations.map((nav, index) => (
+          <Link
+            key={index + "_id"}
+            href={nav.path}
+            className="font-medium hover:text-primary-900 duration-300"
+          >
+            {nav.name}
+          </Link>
+        ))}
+      </>
+    );
+  };
   return (
-    <div className="w-full bg-primary-400">
-      <div className="w-full py-4 flex flex-col md:flex-row md:items-center justify-between mx-auto max-w-7xl px-4 sm:px-0">
-        <div>
+    <div className="w-full bg-primary-400 relative">
+      <div className="w-full py-4 flex flex-row items-center justify-between mx-auto max-w-7xl px-4 sm:px-0">
+        <div className="flex justify-between items-center p-0 z-50">
           <Link href={"/"}>
             {" "}
             <Logo />
           </Link>
         </div>
-        <div className="md:hidden">
-          <button onClick={toggleDropdown} className="text-primary-900">
-            <IconMenu />
-          </button>
+        <div className="hidden md:flex items-center gap-6">
+          {renderNavigations()}
         </div>
-        <div className="flex gap-6">
-          <Link
-            href={"/how-kit-works"}
-            className="font-medium hover:text-primary-900 duration-300"
-          >
-            Comment ça marche
-          </Link>
-          <Link
-            href={"/about"}
-            className="font-medium hover:text-primary-900 duration-300"
-          >
-            A propos
-          </Link>
-          <Link
-            href={""}
-            className="font-medium hover:text-primary-900 duration-300"
-          >
-            Services
-          </Link>
-          <Link
-            href={""}
-            className="font-medium hover:text-primary-900 duration-300"
-          >
-            Développeurs
-          </Link>
-          <Link
-            href={""}
-            className="font-medium hover:text-primary-900 duration-300"
-          >
-            Contact
-          </Link>
-        </div>
-        <div className="flex gap-3">
+        <div className="hidden md:flex gap-3">
           <Button handleClick={(e) => {}} variant="outlined">
             Connexion
           </Button>
           <Button handleClick={(e) => {}}>Inscription</Button>
         </div>
+        {!isDropdownOpen ? (
+          <div className={`md:hidden z-50 ${!isDropdownOpen}?'rotate-180':''`}>
+            <button
+              onClick={toggleDropdown}
+              className={
+                isDropdownOpen ? "text-primary-90" : "text-primary-900"
+              }
+            >
+              <IconMenu />
+            </button>
+          </div>
+        ) : (
+          <div className="md:hidden z-50">
+            <button
+              onClick={toggleDropdown}
+              className={
+                isDropdownOpen ? "text-primary-90" : "text-primary-900"
+              }
+            >
+              <IconClose className="h-10 w-10 text-primary-900" />
+            </button>
+          </div>
+        )}
       </div>
+
+      {isDropdownOpen && (
+        <div className="md:hidden fixed top-0 left-0 z-40 w-full h-screen bg-primary-400 bg-opacity-80 duration-300">
+          <div className="bg-white shadow-lg z-50 w-full h-screen">
+            <div className="flex flex-col items-center justify-center gap-6 py-32">
+              {renderNavigations()}
+
+              <div className="flex flex-col gap-3">
+                <Button handleClick={(e) => {}} variant="outlined">
+                  Connexion
+                </Button>
+                <Button handleClick={(e) => {}}>Inscription</Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
-}
+};
+
+export default Navbar;
