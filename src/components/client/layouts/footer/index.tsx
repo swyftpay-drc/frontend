@@ -83,7 +83,7 @@ const Footer = () => {
     return (
       <>
         {menus?.map((menu, index) => (
-          <div className="flex flex-col gap-3" key={`${index}_id`}>
+          <div className="flex flex-col gap-1" key={`${index}_id`}>
             <h6 className="ml-4 text-lg font-bold text-primary-900">
               {menu.subSectionTitle}
             </h6>
@@ -122,7 +122,7 @@ const Footer = () => {
                 </address>
                 <div className="flex gap-3">
                   <Link href={"contact@swyftpay.com"}>
-                    <IconFacebook className="w-6 h-6"/>
+                    <IconFacebook className="w-2 h-2"/>
                   </Link>
                   <Link href={"contact@swyftpay.com"}>
                     <IconLinkedin />
