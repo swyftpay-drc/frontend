@@ -74,7 +74,9 @@ export default function Header() {
           >
             Connexion
           </Button>
-          <Button handleClick={(e) => {}}>Inscription</Button>
+          <Button handleClick={(e) => {}} variant="contained">
+            Inscription
+          </Button>
         </div>
       </div>
     </div>

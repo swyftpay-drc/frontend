@@ -13,7 +13,7 @@ export const Button: React.FC<Props> = ({
 }) => {
   const getVariant = () => {
     if (variant === "contained") {
-      return "bg-primary-900";
+      return "bg-primary-900 border-2 border-primary-900 text-white hover:bg-transparent hover:border-2 hover:border-primary-900 hover:text-primary-900";
     } else if (variant === "outlined") {
       return "border-2 border-primary-900 text-primary-900 hover:bg-primary-900 bg-transparent hover:text-white";
     }
@@ -23,7 +23,7 @@ export const Button: React.FC<Props> = ({
     <>
       <button
         onClick={handleClick}
-        className={`flex gap-2 items-center justify-center bg-primary-900 py-3 px-8  font-semibold min-w-[150px] rounded-full shadow-md disabled:focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 duration-300 ${className} ${getVariant()} shadow-white/50`}
+        className={`flex gap-2 items-center justify-center bg-primary-900 py-2 px-8  font-semibold min-w-[150px] rounded-full shadow-md disabled:focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 duration-300 ${className} ${getVariant()} shadow-white/50`}
       >
         {children}
         {title}

@@ -13,18 +13,19 @@ const Banner = () => {
     <>
       <div className="sm:py-0 relative">
         <RightClipPath />
-        <div className="grid grid-cols-12 sm:grid-cols-2">
+        <div className="grid md:grid-cols-2 sm:grid-cols-2">
           <div className="">
             <div className="flex flex-col gap-7">
               <h1 className="md:text-5xl font-bold tracking-tight text-gray-800 sm:text-5xl md:leading-tight ">
-                Acceptez les
+                Intégrer les
                 <span className="text-primary-900"> paiements mobiles</span> sur
-                votre site web et application mobile.
+                votre plateforme en ligne grâce à
+                <span className="text-primary-900"> SwyftPay</span>
               </h1>
               <div>
                 <p className="font-light text-lg text-text-primary">
                   SwyftPay est la solution simple et sécurisée pour faire payer
-                  vos clients partout dans le monde.
+                  vos clients partout dans le monde
                 </p>
               </div>
 
