@@ -13,7 +13,7 @@ const misssionAndVisions = [
 ];
 export const MissionVisionSection = () => {
   return (
-    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6 lg:gap-24 md:py-12">
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6 lg:gap-24 md:py-12 relative -top-32 z-50 bg-white shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] hover:shadow-2xl hover:shadow-primary-900/20 rounded-xl">
       {misssionAndVisions.map((item, index) => (
         <Card
           title={item.titile}
@@ -31,7 +31,7 @@ type CardProps = {
 };
 export const Card: React.FC<CardProps> = ({ title, description }) => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4  p-4  rounded-xl">
       <h2 className="text-gray-800 font-bold text-3xl">{title}</h2>
       <p className="text-text-primary">{description}</p>
     </div>

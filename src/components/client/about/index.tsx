@@ -15,11 +15,16 @@ const About:React.FC<Props> = () => {
     <>
        <Header />
       <BannerSection title='Qui sommes-nous ?' subTitle='Vision - Mission - Team'/>
-      <BaseContainer className='py-12'>
+      <BaseContainer className='py-12 relative'>
       <MissionVisionSection/>
       <OurResults/>
+      </BaseContainer>
+      <div className='w-full bg-primary-800/5'>
+      <BaseContainer>
       <OurTeam/>
       </BaseContainer>
+      </div>
+     
     </>
   )
 }
