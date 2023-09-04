@@ -42,7 +42,6 @@ const OurTeam = () => {
         </CardTeam>
       ))}
     </div>
-    <SectionTitle title='Ils nous font confiance' className='text-center'/>
     </div>
   )
 }
