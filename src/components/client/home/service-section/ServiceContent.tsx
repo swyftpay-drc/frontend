@@ -11,10 +11,10 @@ const ServiceContent :React.FC<Props> = ({children, title, subTitle, text}) => {
   return (
     <div className="flex gap-3">
      <span>
-      <IconRight className='rounded-full border-2 border-primary-900 h-8 w-8 text-white' color='#291FB3' />
+      <IconRight className='rounded-full border-2 border-primary-900 h-5 md:h-8 w-5 md:w-8 text-white' color='#291FB3' />
     </span>
     <div className="flex flex-col gap-2">
-      <h6 className="font-bold text-gray-900 text-lg">
+      <h6 className="font-bold text-gray-900 md:text-lg">
         {title}
       </h6>
       <p className="text-text-primary">

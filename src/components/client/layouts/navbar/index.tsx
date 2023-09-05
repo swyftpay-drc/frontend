@@ -28,7 +28,7 @@ const Navbar: React.FC = () => {
           <Link
             key={index + "_id"}
             href={nav.path}
-            className="font-medium hover:text-primary-900 duration-300"
+            className="font-semibold hover:text-primary-900 duration-300"
           >
             {nav.name}
           </Link>
@@ -80,9 +80,9 @@ const Navbar: React.FC = () => {
       </div>
 
       {isDropdownOpen && (
-        <div className="md:hidden fixed top-0 left-0 z-40 w-full h-screen bg-primary-400 bg-opacity-80 duration-300">
-          <div className="bg-white shadow-lg z-50 w-full h-screen">
-            <div className="flex flex-col items-center justify-center gap-6 py-32">
+        <div className="md:hidden fixed top-0 left-0 z-40 w-full h-screen bg-opacity-80 duration-300">
+          <div className="bg-primary-400 shadow-lg z-50 w-full h-screen py-24">
+            <div className="flex flex-col items-center justify-start gap-6 bg-white h-screen py-12">
               {renderNavigations()}
 
               <div className="flex flex-col gap-3">

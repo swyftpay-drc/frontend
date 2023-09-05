@@ -16,7 +16,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = (props) => {
         <div>
           <Image src={ServiceImg} alt="test" className="w-auto" />
         </div>
-        <div className="flex flex-col gap-12">
+        <div className="flex flex-col gap-6 md:gap-12">
           <SectionTitle
             title="Solution de passerelle de paiement numérique"
             className="py-0 px-0"
