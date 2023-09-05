@@ -11,7 +11,6 @@ import {
   IconPlay,
   IconTwitter,
 } from "@/components/ui/icons";
-
 const footerMenus: IFooterMenus[] = [
   {
     id: 1,
@@ -78,7 +77,6 @@ export type FooterProps = {
 };
 const Footer = () => {
   const [menus, setMenus] = useState<IFooterMenus[]>(footerMenus);
-
   const renderFooterMenus = () => {
     return (
       <>
@@ -90,7 +88,9 @@ const Footer = () => {
             {menu.menus.map((item, i) => (
               <Link
                 href={item.path}
-                className="flex items-center hover:text-primary-900 duration-300"
+                className={`flex items-center hover:text-primary-900 duration-300 ${
+                  i > 0 ? `-mt-2` : `mt-4`
+                }`}
                 key={`${index}_id${i}`}
               >
                 <span>
@@ -108,17 +108,17 @@ const Footer = () => {
   };
   return (
     <>
-      <div className="bg-primary-800/5 h-full pt-32">
+      <div className="bg-primary-800/5 h-3/6 pt-14 pb-14">
         <BaseContainer>
-          <div className="grid grid-rows-2 w-full">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
-              <div className="flex  flex-col gap-8">
-                <div className="mr-12">
-                  <h2 className="text-primary-900 text-2xl font-bold">
+          <div className="">
+            <div className=" grid grid-cols-1 gap-6 md:flex md:justify-between lg:flex lg:justify-between">
+              <div className="flex  flex-col gap-6 md:w-1/4 lg:w-1/4">
+                <div className="pr-12 sm:pr-4">
+                  <h2 className="text-primary-900 text-2xl font-bold ml-3 md:-ml-0">
                     Swiftpay
                   </h2>
                 </div>
-                <p>
+                <p className="ml-4 pr-8 md:-ml-0 md:-ml-0 w-full">
                   Lorem ipsum dolor sit amet consectetur. Volutpat consectetur
                   interdum tincidunt morbi en.
                 </p>
@@ -133,7 +133,7 @@ const Footer = () => {
                 </address>
                 <div className="hidden md:flex gap-3">
                   <Link href={"contact@swyftpay.com"}>
-                    <IconFacebook className="w-2 h-2" />
+                    <IconFacebook />
                   </Link>
                   <Link href={"contact@swyftpay.com"}>
                     <IconLinkedin />
@@ -145,9 +145,9 @@ const Footer = () => {
               </div>
               {renderFooterMenus()}
             </div>
-            <div className="md:hidden flex gap-3 pt-6">
+            <div className="md:hidden flex gap-3 pt-6 pb-6 ml-4 md:-ml-0">
               <Link href={"contact@swyftpay.com"}>
-                <IconFacebook className="w-2 h-2" />
+                <IconFacebook />
               </Link>
               <Link href={"contact@swyftpay.com"}>
                 <IconLinkedin />
@@ -157,7 +157,7 @@ const Footer = () => {
               </Link>
             </div>
             <div className="w-full flex justify-center">
-              <span className="text-text-primary text-lg font-medium">
+              <span className="text-text-primary text-md font-medium">
                 SwyftPay &copy; {new Date().getFullYear()} Tous droits réservés
               </span>
             </div>
@@ -167,5 +167,4 @@ const Footer = () => {
     </>
   );
 };
-
 export default Footer;
