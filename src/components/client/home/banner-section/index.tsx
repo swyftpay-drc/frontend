@@ -16,7 +16,7 @@ const Banner = () => {
           {" "}
           <RightClipPath />
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="w-full">
             <div className="flex flex-col gap-3 md:gap-7">
               <h1
