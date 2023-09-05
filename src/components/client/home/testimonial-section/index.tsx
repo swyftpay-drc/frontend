@@ -10,7 +10,7 @@ export type TestimonialSectionProps = {
 };
 const TestimonialSection: React.FC<TestimonialSectionProps> = ({ title }) => {
   return (
-    <div className="h-full py-32">
+    <div className="h-full  py-12 md:py-32">
       <SectionTitle
         title="Ce que nos clients disent de nous"
         className="text-center p-2 py-8"
