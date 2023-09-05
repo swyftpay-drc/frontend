@@ -88,11 +88,17 @@ const Footer = () => {
               {menu.subSectionTitle}
             </h6>
             {menu.menus.map((item, i) => (
-              <Link href={item.path} className="flex items-center hover:text-primary-900 duration-300" key={`${index}_id${i}`}>
+              <Link
+                href={item.path}
+                className="flex items-center hover:text-primary-900 duration-300"
+                key={`${index}_id${i}`}
+              >
                 <span>
                   <IconPlay />
                 </span>
-                <span className="text-text-primary font-medium">{item.name}</span>
+                <span className="text-text-primary font-medium">
+                  {item.name}
+                </span>
               </Link>
             ))}
           </div>
@@ -105,24 +111,29 @@ const Footer = () => {
       <div className="bg-primary-800/5 h-full pt-32">
         <BaseContainer>
           <div className="grid grid-rows-2 w-full">
-            <div className="grid grid-cols-4 gap-12">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
               <div className="flex  flex-col gap-8">
-               <div className="mr-12">
-                 <h2 className="text-primary-900 text-2xl font-bold">Swiftpay</h2>
-               </div>
+                <div className="mr-12">
+                  <h2 className="text-primary-900 text-2xl font-bold">
+                    Swiftpay
+                  </h2>
+                </div>
                 <p>
                   Lorem ipsum dolor sit amet consectetur. Volutpat consectetur
                   interdum tincidunt morbi en.
                 </p>
-                <address>
+                <address className="hidden md:block">
                   <Link href={"contact@swyftpay.com"} className="flex gap-3">
-                   <span> <IconMail/></span>
+                    <span>
+                      {" "}
+                      <IconMail />
+                    </span>
                     <span>contact@swyftpay.com</span>
                   </Link>
                 </address>
-                <div className="flex gap-3">
+                <div className="hidden md:flex gap-3">
                   <Link href={"contact@swyftpay.com"}>
-                    <IconFacebook className="w-2 h-2"/>
+                    <IconFacebook className="w-2 h-2" />
                   </Link>
                   <Link href={"contact@swyftpay.com"}>
                     <IconLinkedin />
@@ -134,8 +145,21 @@ const Footer = () => {
               </div>
               {renderFooterMenus()}
             </div>
+            <div className="md:hidden flex gap-3 pt-6">
+              <Link href={"contact@swyftpay.com"}>
+                <IconFacebook className="w-2 h-2" />
+              </Link>
+              <Link href={"contact@swyftpay.com"}>
+                <IconLinkedin />
+              </Link>
+              <Link href={"contact@swyftpay.com"}>
+                <IconTwitter />
+              </Link>
+            </div>
             <div className="w-full flex justify-center">
-              <span className="text-text-primary text-lg font-medium">SwyftPay  &copy; {new Date().getFullYear()} Tous droits réservés</span>
+              <span className="text-text-primary text-lg font-medium">
+                SwyftPay &copy; {new Date().getFullYear()} Tous droits réservés
+              </span>
             </div>
           </div>
         </BaseContainer>
