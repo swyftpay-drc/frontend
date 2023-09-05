@@ -47,7 +47,7 @@ const Banner = () => {
               {" "}
               <CercleClipPath />
             </div>
-            <div className="absolute top-5 -right-10 bottom-9 z-40 hidden md:flex">
+            <div className="absolute top-5 -right-10 bottom-9 z-40 hidden md:block">
               <Image src={BgHiro} width={520} alt="" />
             </div>
           </div>
