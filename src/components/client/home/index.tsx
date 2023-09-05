@@ -14,7 +14,7 @@ export const Home = () => {
     <>
       <Header />
       <div className="bg-primary-400">
-        <BaseContainer className="pt-32">
+        <BaseContainer className="md:pt-32">
           <BannerSection />
         </BaseContainer>
       </div>
