@@ -45,17 +45,17 @@ const Navbar: React.FC = () => {
             <Logo />
           </Link>
         </div>
-        <div className="hidden md:flex items-center gap-6">
+        <div className="hidden lg:flex items-center gap-6">
           {renderNavigations()}
         </div>
-        <div className="hidden md:flex gap-3">
+        <div className="hidden lg:flex gap-3">
           <Button handleClick={(e) => {}} variant="outlined">
             Connexion
           </Button>
           <Button handleClick={(e) => {}}>Inscription</Button>
         </div>
         {!isDropdownOpen ? (
-          <div className={`md:hidden z-50 ${!isDropdownOpen}?'rotate-180':''`}>
+          <div className={`lg:hidden z-50 ${!isDropdownOpen}?'rotate-180':''`}>
             <button
               onClick={toggleDropdown}
               className={
@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
             </button>
           </div>
         ) : (
-          <div className="md:hidden z-50">
+          <div className="lg:hidden z-50">
             <button
               onClick={toggleDropdown}
               className={
@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
       </div>
 
       {isDropdownOpen && (
-        <div className="md:hidden fixed top-0 left-0 z-40 w-full h-screen bg-opacity-80 duration-300">
+        <div className="lg:hidden fixed top-0 left-0 z-40 w-full h-screen bg-opacity-80 duration-300">
           <div className="bg-primary-400 shadow-lg z-50 w-full h-screen py-24">
             <div className="flex flex-col items-center justify-start gap-6 bg-white h-screen py-12">
               {renderNavigations()}
