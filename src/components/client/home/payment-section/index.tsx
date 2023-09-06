@@ -8,12 +8,13 @@ export type PaymentSectionProps = {
 };
 const PaymentSection: React.FC<PaymentSectionProps> = ({ title }) => {
   return (
-    <div className="h-full" data-aos="fade-up">
+    <div className="h-full">
       <SectionTitle
         title="Solution de passerelle de paiement numérique"
         className="text-center p-2 py-8"
+        dataAos="fade-up"
       />
-      <p className="mb-5 text-center text-gray-800">
+      <p className="mb-5 text-center text-gray-800" data-aos="fade-up">
         Lorem ipsum dolor sit amet consectetur. Volutpat consectetur interdum
         tincidunt morbi enim mauris. Laoreet pharetra pharetra elementum
         suspendisse. Id sem molestie iaculis condimentum est malesuada vitae.
@@ -24,6 +25,7 @@ const PaymentSection: React.FC<PaymentSectionProps> = ({ title }) => {
         <PaymentCard
           title="Planification financière détaillée"
           text="Lorem ipsum dolor sit amet cons Volutpat consectetur morbi enim mauris.."
+          dataAos="fade-right"
         >
           <IconCalendar/>
         </PaymentCard>
@@ -31,6 +33,7 @@ const PaymentSection: React.FC<PaymentSectionProps> = ({ title }) => {
         <PaymentCard
           title="Approche personnalisée"
           text="Lorem ipsum dolor sit amet cons Volutpat consectetur morbi enim mauris.."
+          dataAos="fade-up"
         >
           <IconPaint/>
         </PaymentCard>
@@ -38,6 +41,7 @@ const PaymentSection: React.FC<PaymentSectionProps> = ({ title }) => {
         <PaymentCard
           title="Gestion de l'investissement"
           text="Lorem ipsum dolor sit amet cons Volutpat consectetur morbi enim mauris.."
+          dataAos="fade-left"
         >
           <IconConfig/>
         </PaymentCard>

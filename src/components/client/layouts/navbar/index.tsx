@@ -17,10 +17,15 @@ const navigations = [
 
 const Navbar: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
+  const handleActiveMenu = () => {
+    setIsActive(true);
+  };
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+
   const renderNavigations = () => {
     return (
       <>
@@ -28,9 +33,12 @@ const Navbar: React.FC = () => {
           <Link
             key={index + "_id"}
             href={nav.path}
-            className="font-semibold hover:text-primary-900 duration-300"
+            className={`font-semibold hover:text-primary-900 transition${
+              isActive ? "text-primary-900" : "text-gray-800"
+            }`}
+            onClick={handleActiveMenu}
           >
-            {nav.name}
+            {nav.name}{isActive}
           </Link>
         ))}
       </>
@@ -39,10 +47,18 @@ const Navbar: React.FC = () => {
   return (
     <div className="w-full bg-primary-400 relative">
       <div className="w-full py-4 flex flex-row items-center justify-between mx-auto max-w-7xl px-4 sm:px-0">
-        <div className="flex justify-between items-center pl-0 z-50">
-          <Link href={"/"} className="-ml-12 md:-ml-1 lg:-ml-1">
+        <div className="flex justify-between items-center p-0 z-50">
+          <Link href={"/"} className="hidden lg:flex">
             {" "}
             <Logo />
+          </Link>
+          <Link
+            href={"/"}
+            className={`lg:hidden text-3xl font-bold ${
+              isDropdownOpen ? "text-white" : "text-primary-900"
+            }`}
+          >
+            <h1>Swyftpay</h1>
           </Link>
         </div>
         <div className="hidden lg:flex items-center gap-6">
@@ -61,7 +77,9 @@ const Navbar: React.FC = () => {
             <button
               onClick={toggleDropdown}
               className={
-                isDropdownOpen ? "text-primary-90" : "text-primary-900"
+                isDropdownOpen
+                  ? "text-primary-90 transition"
+                  : "text-primary-900 transition"
               }
             >
               <IconMenu />
@@ -72,18 +90,24 @@ const Navbar: React.FC = () => {
             <button
               onClick={toggleDropdown}
               className={
-                isDropdownOpen ? "text-primary-90" : "text-primary-900"
+                isDropdownOpen
+                  ? "text-primary-90 transition"
+                  : "text-primary-900 transition"
               }
             >
-              <IconClose className="h-10 w-10 text-primary-900" />
+              <IconClose className="h-10 w-10 text-white" />
             </button>
           </div>
         )}
       </div>
 
       {isDropdownOpen && (
-        <div className="lg:hidden fixed top-0 left-0 z-40 w-full h-screen bg-opacity-80 duration-300">
-          <div className="bg-primary-400 shadow-lg z-50 w-full h-screen py-24">
+        <div className="lg:hidden fixed top-0 left-0 z-40 w-full h-screen bg-opacity-80 transition">
+          <div
+            className="bg-primary-900 shadow-lg z-50 w-full h-screen py-24"
+            data-aos="fade-down"
+            data-aos-duration="500"
+          >
             <div className="flex flex-col items-center justify-start gap-6 bg-white h-screen py-12">
               {renderNavigations()}
 
