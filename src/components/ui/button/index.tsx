@@ -13,7 +13,7 @@ export const Button: React.FC<Props> = ({
 }) => {
   const getVariant = () => {
     if (variant === "contained") {
-      return "bg-primary-900 hover:bg-transparent text-white";
+      return "bg-primary-900 border-2 border-primary-900 text-white hover:bg-transparent hover:border-2 hover:border-primary-900 hover:text-primary-900";
     } else if (variant === "outlined") {
       return "border-2 border-primary-900 text-primary-900 hover:bg-primary-900 bg-transparent hover:text-white";
     }
