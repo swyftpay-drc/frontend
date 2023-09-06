@@ -17,10 +17,15 @@ const navigations = [
 
 const Navbar: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
+  const handleActiveMenu = () => {
+    setIsActive(true);
+  };
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+
   const renderNavigations = () => {
     return (
       <>
@@ -28,9 +33,12 @@ const Navbar: React.FC = () => {
           <Link
             key={index + "_id"}
             href={nav.path}
-            className="font-semibold hover:text-primary-900 transition"
+            className={`font-semibold hover:text-primary-900 transition${
+              isActive ? "text-primary-900" : "text-gray-800"
+            }`}
+            onClick={handleActiveMenu}
           >
-            {nav.name}
+            {nav.name}{isActive}
           </Link>
         ))}
       </>

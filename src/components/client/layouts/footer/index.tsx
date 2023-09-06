@@ -115,7 +115,7 @@ const Footer = () => {
               <div className="flex  flex-col gap-6 md:w-1/4 lg:w-1/4">
                 <div className="pr-12 sm:pr-4">
                   <h2 className="text-primary-900 text-2xl font-bold ml-3 md:-ml-0">
-                    Swiftpay
+                    Swyftpay
                   </h2>
                 </div>
                 <p className="ml-4 pr-8 md:-ml-0 md:-ml-0 w-full">
@@ -156,13 +156,13 @@ const Footer = () => {
                 <IconTwitter />
               </Link>
             </div>
-            <div className="w-full flex justify-center">
-              <span className="text-text-primary text-md font-medium">
-                SwyftPay &copy; {new Date().getFullYear()} Tous droits réservés
-              </span>
-            </div>
           </div>
         </BaseContainer>
+      </div>
+      <div className="w-full flex justify-center bg-primary-900 py-2 items-center">
+        <span className="text-white text-md font-medium">
+          SwyftPay &copy; {new Date().getFullYear()} Tous droits réservés
+        </span>
       </div>
     </>
   );
