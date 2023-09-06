@@ -52,7 +52,9 @@ const Navbar: React.FC = () => {
           <Button handleClick={(e) => {}} variant="outlined">
             Connexion
           </Button>
-          <Button handleClick={(e) => {}}>Inscription</Button>
+          <Button handleClick={(e) => {}} variant="contained">
+            Inscription
+          </Button>
         </div>
         {!isDropdownOpen ? (
           <div className={`lg:hidden z-50 ${!isDropdownOpen}?'rotate-180':''`}>
