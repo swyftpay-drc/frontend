@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
           </Link>
           <Link
             href={"/"}
-            className={`text-3xl font-bold ${
+            className={`lg:hidden text-3xl font-bold ${
               isDropdownOpen ? "text-white" : "text-primary-900"
             }`}
           >
