@@ -11,9 +11,9 @@ export type ExperienceSectionProps = {
 };
 const ExperienceSection: React.FC<ExperienceSectionProps> = (props) => {
   return (
-    <div className="w-full py-12 md:py-32 bg-gradient-to-l from-primary-800/80 to-primary-900 h-full">
+    <div className="w-full py-12 md:py-32 bg-gradient-to-l from-primary-800/80 to-primary-900 h-full" >
       <BaseContainer className="flex items-center">
-      <div className="grid grid-cols-1 md:grid-cols-2 relative gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 relative gap-4" data-aos="fade-up">
         <div>
         <SectionTitle
             title="Faites l'expérience de paiements sans faille avec notre application, téléchargez-la dès maintenant !"

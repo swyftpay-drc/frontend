@@ -7,7 +7,7 @@ import "aos/dist/aos.css";
 export type Props = PropsWithChildren & {};
 const Provider: React.FC<Props> = ({ children }) => {
   useEffect(() => {
-    AOS.init()
+    AOS.init({duration:2000})
   }, []);
   return <ThemeProvider>{children}</ThemeProvider>;
 };

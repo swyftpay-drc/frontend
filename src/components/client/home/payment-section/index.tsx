@@ -8,7 +8,7 @@ export type PaymentSectionProps = {
 };
 const PaymentSection: React.FC<PaymentSectionProps> = ({ title }) => {
   return (
-    <div className="h-full">
+    <div className="h-full" data-aos="fade-up">
       <SectionTitle
         title="Solution de passerelle de paiement numérique"
         className="text-center p-2 py-8"

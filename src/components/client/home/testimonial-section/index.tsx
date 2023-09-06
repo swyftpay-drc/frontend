@@ -22,7 +22,7 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = ({ title }) => {
         Sagittis neque faucibus feugiat convallis varius.
       </p>
 
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-24 py-12">
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-24 py-12" data-aos="fade-up">
         <TestimonialCard
           client={{ name: "Rosaire Kota", profession: "Developpeur" }}
           text="Lorem ipsum dolor sit amet consectetur. Volutpat consectetur interdum tincidunt morbi enim mauris. Laoreet pharetra pharetra elementum suspendisse. Id sem molestie iaculis condimentum est malesuada vitae. Sagittis neque faucibus feugiat convallis varius."
