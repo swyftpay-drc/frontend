@@ -4,7 +4,7 @@ import React from "react";
 export const LeftClipPath = () => {
   return (
     <svg
-      className="absolute -top-10 right-80 animate-pulse md:right-100"
+      className="absolute -top-10 right-80 animate-pulse md:hidden lg:block lg:-ml-100 z-1"
       width="200"
       height="200"
       fill="none"

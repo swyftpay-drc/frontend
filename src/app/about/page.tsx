@@ -1,13 +1,12 @@
-import React from 'react'
-import About from '@/components/client/about'
-
+import React from "react";
+import About from "@/components/client/about";
 
 const AboutPage = () => {
   return (
     <main className="min-h-screen bg-white">
-    <About/>
+      <About />
     </main>
-  )
-}
+  );
+};
 
-export default AboutPage
+export default AboutPage;

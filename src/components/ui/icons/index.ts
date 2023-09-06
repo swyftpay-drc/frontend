@@ -12,4 +12,5 @@ export {IconFacebook} from "./Facebook"
 export {IconLinkedin} from "./Linkedin"
 export {IconTwitter} from "./Twitter"
 export {IconMail} from './Mail'
+export {IconPlus} from './Plus'
 

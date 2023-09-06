@@ -16,7 +16,7 @@ const Banner = () => {
           {" "}
           <RightClipPath />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="w-full">
             <div className="flex flex-col gap-3 md:gap-7">
               <h1
@@ -35,8 +35,8 @@ const Banner = () => {
                 </p>
               </div>
 
-              <div className="pt-1 md:pt-3">
-                <Button handleClick={(e) => {}}>
+              <div className="mt-4 md:pt-3">
+                <Button handleClick={(e) => {}} variant="contained">
                   S&apos;inscrire maintenant
                 </Button>
               </div>
@@ -47,8 +47,14 @@ const Banner = () => {
               {" "}
               <CercleClipPath />
             </div>
-            <div className="absolute top-5 -right-10 bottom-9 z-40 hidden md:block md:-right-4 ">
-              <Image src={BgHiro} width={531} height={468} alt="" />
+            <div className="absolute top-5 -right-10 bottom-9 md:relative hidden md:block md:-right-0 md:top-16 lg:absolute lg:top-5 lg:-right-10 lg:bottom-9 z-40">
+              <Image
+                src={BgHiro}
+                width={531}
+                height={468}
+                className="w-100 md:w-full"
+                alt=""
+              />
             </div>
           </div>
         </div>

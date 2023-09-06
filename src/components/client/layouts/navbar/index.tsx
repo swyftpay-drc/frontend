@@ -39,8 +39,8 @@ const Navbar: React.FC = () => {
   return (
     <div className="w-full bg-primary-400 relative">
       <div className="w-full py-4 flex flex-row items-center justify-between mx-auto max-w-7xl px-4 sm:px-0">
-        <div className="flex justify-between items-center p-0 z-50">
-          <Link href={"/"}>
+        <div className="flex justify-between items-center pl-0 z-50">
+          <Link href={"/"} className="-ml-12 md:-ml-1 lg:-ml-1">
             {" "}
             <Logo />
           </Link>
