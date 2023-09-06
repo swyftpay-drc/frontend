@@ -14,9 +14,9 @@ const ServiceSection: React.FC<ServiceSectionProps> = (props) => {
     <div className="h-full w-full py-32">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-24">
         <div>
-          <Image src={ServiceImg} alt="test" className="w-auto" />
+          <Image src={ServiceImg} alt="test" className="w-auto" data-aos="fade-right"/>
         </div>
-        <div className="flex flex-col gap-6 md:gap-12">
+        <div className="flex flex-col gap-6 md:gap-12" data-aos="fade-left">
           <SectionTitle
             title="Solution de passerelle de paiement numérique"
             className="py-0 px-0"
