@@ -11,7 +11,7 @@ import Image from "next/image";
 const Banner = () => {
   return (
     <>
-      <div className="sm:py-0 relative">
+      <div className="sm:py-0 relative md:mt-8">
         <div className="hidden md:flex">
           {" "}
           <RightClipPath />
@@ -47,8 +47,8 @@ const Banner = () => {
               {" "}
               <CercleClipPath />
             </div>
-            <div className="absolute top-5 -right-10 bottom-9 z-40 hidden md:block">
-              <Image src={BgHiro} width={520} alt="" />
+            <div className="absolute top-5 -right-10 bottom-9 z-40 hidden md:block md:-right-4 ">
+              <Image src={BgHiro} width={531} height={468} alt="" />
             </div>
           </div>
         </div>
