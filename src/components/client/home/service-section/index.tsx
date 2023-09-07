@@ -23,7 +23,7 @@ const ServiceSection: React.FC<ServiceSectionProps> = (props) => {
         </div>
         <div className="flex flex-col gap-6 md:gap-12" data-aos="fade-left">
           <SectionTitle
-            title="Solution de passerelle de paiement numérique"
+            title="Intégrateur Sécurisé"
             className="py-0 px-0"
           />
 

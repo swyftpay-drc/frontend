@@ -1,7 +1,7 @@
 import { children } from "@/types/base";
 import SectionTitle from "../../layouts/section-title";
 import PaymentCard from "./Card";
-import {IconPaint, IconCalendar, IconConfig } from "@/components/ui/icons";
+import { IconPaint, IconCalendar, IconConfig } from "@/components/ui/icons";
 
 export type PaymentSectionProps = {
   title?: string;
@@ -15,10 +15,12 @@ const PaymentSection: React.FC<PaymentSectionProps> = ({ title }) => {
         dataAos="fade-up"
       />
       <p className="mb-5 text-center text-gray-800" data-aos="fade-up">
-        Lorem ipsum dolor sit amet consectetur. Volutpat consectetur interdum
-        tincidunt morbi enim mauris. Laoreet pharetra pharetra elementum
-        suspendisse. Id sem molestie iaculis condimentum est malesuada vitae.
-        Sagittis neque faucibus feugiat convallis varius.
+        La solution de passerelle de paiement numérique de Swyftpay constitue le
+        socle de notre plateforme fintech, facilitant des transactions en ligne
+        sécurisées et efficaces pour les entreprises et les particuliers. Elle
+        offre une variété de méthodes de paiement, une gestion en temps réel des
+        transactions et une intégration aisée pour une expérience de paiement
+        optimale.
       </p>
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-24 py-12">
@@ -27,7 +29,7 @@ const PaymentSection: React.FC<PaymentSectionProps> = ({ title }) => {
           text="Lorem ipsum dolor sit amet cons Volutpat consectetur morbi enim mauris.."
           dataAos="fade-right"
         >
-          <IconCalendar/>
+          <IconCalendar />
         </PaymentCard>
 
         <PaymentCard
@@ -35,7 +37,7 @@ const PaymentSection: React.FC<PaymentSectionProps> = ({ title }) => {
           text="Lorem ipsum dolor sit amet cons Volutpat consectetur morbi enim mauris.."
           dataAos="fade-up"
         >
-          <IconPaint/>
+          <IconPaint />
         </PaymentCard>
 
         <PaymentCard
@@ -43,7 +45,7 @@ const PaymentSection: React.FC<PaymentSectionProps> = ({ title }) => {
           text="Lorem ipsum dolor sit amet cons Volutpat consectetur morbi enim mauris.."
           dataAos="fade-left"
         >
-          <IconConfig/>
+          <IconConfig />
         </PaymentCard>
       </div>
     </div>
