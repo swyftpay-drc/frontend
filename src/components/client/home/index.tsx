@@ -13,7 +13,7 @@ export const Home = () => {
   return (
     <>
       <Header />
-      <div className="bg-gradient-to-t  from-primary-400">
+      <div className=" bg-primary-400">
         <BaseContainer className="py-12 sm:py-10 md:pt-32">
           <BannerSection />
         </BaseContainer>

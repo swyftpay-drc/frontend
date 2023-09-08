@@ -10,7 +10,7 @@ export type Props = {
 const BannerSection: React.FC<Props> = ({ title, subTitle }) => {
   return (
     <>
-      <div className="w-full bg-gradient-to-t  from-primary-400 pb-10 pt-9 md:pb-18 md:pt-12 lg:pb-18 lg:pt-12">
+      <div className="w-full bg-primary-400 pb-10 pt-9 md:pb-18 md:pt-12 lg:pb-18 lg:pt-12">
         <BaseContainer className="flex justify-center items-center">
           <div className="flex flex-col gap-2 md:gap-6 items-center">
             <h1 className="text-2xl md:text-4xl text-primary-900 font-bold">
