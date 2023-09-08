@@ -1,7 +1,7 @@
 import { children } from "@/types/base";
 import SectionTitle from "../../layouts/section-title";
 import PaymentCard from "./Card";
-import {IconPaint, IconCalendar, IconConfig } from "@/components/ui/icons";
+import { IconPaint, IconCalendar, IconConfig } from "@/components/ui/icons";
 
 export type PaymentSectionProps = {
   title?: string;
@@ -15,35 +15,35 @@ const PaymentSection: React.FC<PaymentSectionProps> = ({ title }) => {
         dataAos="fade-up"
       />
       <p className="mb-5 text-center text-gray-800" data-aos="fade-up">
-        Lorem ipsum dolor sit amet consectetur. Volutpat consectetur interdum
-        tincidunt morbi enim mauris. Laoreet pharetra pharetra elementum
-        suspendisse. Id sem molestie iaculis condimentum est malesuada vitae.
-        Sagittis neque faucibus feugiat convallis varius.
+        Notre solution de passerelle de paiement numérique offre une méthode
+        sécurisée et fluide pour traiter les transactions en ligne. Elle
+        simplifie le processus de paiement pour vos clients et garantit la
+        sécurité de vos transactions électroniques..
       </p>
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-24 py-12">
         <PaymentCard
           title="Planification financière détaillée"
-          text="Lorem ipsum dolor sit amet cons Volutpat consectetur morbi enim mauris.."
+          text="Nous élaborons des plans financiers complets, adaptés à vos besoins spécifiques pour vous guider vers l'indépendance financière."
           dataAos="fade-right"
         >
-          <IconCalendar/>
+          <IconCalendar />
         </PaymentCard>
 
         <PaymentCard
           title="Approche personnalisée"
-          text="Lorem ipsum dolor sit amet cons Volutpat consectetur morbi enim mauris.."
+          text="Chaque client bénéficie d'une approche sur mesure. Nous considérons votre situation financière unique pour vous offrir des solutions adaptées à vos objectifs."
           dataAos="fade-up"
         >
-          <IconPaint/>
+          <IconPaint />
         </PaymentCard>
 
         <PaymentCard
           title="Gestion de l'investissement"
-          text="Lorem ipsum dolor sit amet cons Volutpat consectetur morbi enim mauris.."
+          text="Notre équipe expérimentée gère stratégiquement vos investissements, maximisant ainsi les rendements et minimisant les risques."
           dataAos="fade-left"
         >
-          <IconConfig/>
+          <IconConfig />
         </PaymentCard>
       </div>
     </div>
