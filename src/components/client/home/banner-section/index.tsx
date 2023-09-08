@@ -47,7 +47,7 @@ const Banner = () => {
               {" "}
               <CircleClipPath />
             </div>
-            <div className="absolute top-5 -right-10 xl:-right-24 bottom-9 hidden lg:block">
+            <div className="absolute top-5 -right-10 xl:-right-24 bottom-9 hidden lg:block z-20">
               <Image src={BgHiro} width={520} alt="banner-img" className="sm:w-3/5 md:w-3/4 xl:w-11/12 opacity-95" />
             </div>
           </div>
