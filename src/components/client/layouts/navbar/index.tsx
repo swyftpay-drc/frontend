@@ -46,32 +46,32 @@ const Navbar: React.FC = () => {
   };
   return (
     <div className="w-full bg-primary-400 relative">
-      <div className="w-full py-4 flex flex-row items-center justify-between mx-auto max-w-7xl px-4 sm:px-0">
+      <div className="w-full py-4 flex flex-row items-center justify-between mx-auto max-w-7xl px-4 sm:px-6 md:px-8 xl:px-1">
         <div className="flex justify-between items-center p-0 z-50">
-          <Link href={"/"} className="hidden lg:flex">
+          <Link href={"/"} className="hidden xl:flex">
             {" "}
             <Logo />
           </Link>
           <Link
             href={"/"}
-            className={`lg:hidden text-3xl font-bold ${
+            className={`xl:hidden text-3xl font-bold ${
               isDropdownOpen ? "text-white" : "text-primary-900"
             }`}
           >
             <h1>Swyftpay</h1>
           </Link>
         </div>
-        <div className="hidden lg:flex items-center gap-6">
+        <div className="hidden xl:flex items-center gap-6">
           {renderNavigations()}
         </div>
-        <div className="hidden lg:flex gap-3">
+        <div className="hidden xl:flex gap-3">
           <Button handleClick={(e) => {}} variant="outlined">
             Connexion
           </Button>
           <Button handleClick={(e) => {}}>Inscription</Button>
         </div>
         {!isDropdownOpen ? (
-          <div className={`lg:hidden z-50 ${!isDropdownOpen}?'rotate-180':''`}>
+          <div className={`xl:hidden z-50 ${!isDropdownOpen}?'rotate-180':''`}>
             <button
               onClick={toggleDropdown}
               className={
@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
             </button>
           </div>
         ) : (
-          <div className="lg:hidden z-50">
+          <div className="xl:hidden z-50">
             <button
               onClick={toggleDropdown}
               className={
@@ -100,7 +100,7 @@ const Navbar: React.FC = () => {
       </div>
 
       {isDropdownOpen && (
-        <div className="lg:hidden fixed top-0 left-0 z-40 w-full h-screen bg-opacity-80 transition">
+        <div className="xl:hidden fixed top-0 left-0 z-40 w-full h-screen bg-opacity-80 transition">
           <div
             className="bg-primary-900 shadow-lg z-50 w-full h-screen py-24"
             data-aos="fade-down"
