@@ -17,7 +17,8 @@ const ServiceSection: React.FC<ServiceSectionProps> = (props) => {
           <Image
             src={ServiceImg}
             alt="test"
-            className="w-auto"
+            className="w-full"
+
             data-aos="fade-right"
           />
         </div>

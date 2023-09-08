@@ -27,7 +27,7 @@ export const Experience = () => {
                         maintenant!</h2><p className="mt-4 text-lg tracking-tight text-white">Ne perdez pas de temps, faites le premier pas vers votre succès dès aujourd&apos;hui. Notre solution est prête à vous accompagner dans l&apos;atteinte de vos objectifs.</p>
                         <div className='flex justify-center gap-3 pt-6'>
                             <Button handleClick={(e) => {
-                            }} variant="outlined" className="text-primary-900 border-2 border-white bg-white">
+                            }} variant="outlined" className="text-primary-900 border-2 border-white bg-white hover:bg-transparent">
                                 S’inscrire maintenant
                             </Button>
                         </div>
