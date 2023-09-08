@@ -5,7 +5,7 @@ import BannerWave from "@/components/ui/clip-path/waves/Banner";
 import Header from "@/components/client/layouts/navbar";
 import PaymentSection from "@/components/client/home/payment-section";
 import ServiceSection from "./service-section";
-import ExperienceSection from "./experience-section";
+import {Experience as ExperienceSection}from "./experience-section/Experience";
 import TestimonialSection from "./testimonial-section";
 import Footer from "../layouts/footer";
 
@@ -13,8 +13,8 @@ export const Home = () => {
   return (
     <>
       <Header />
-      <div className="bg-primary-400">
-        <BaseContainer className="py-12 sm:py-10 md:pt-30">
+      <div className="bg-gradient-to-t  from-primary-400">
+        <BaseContainer className="py-12 sm:py-10 md:pt-32">
           <BannerSection />
         </BaseContainer>
       </div>

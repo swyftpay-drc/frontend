@@ -8,7 +8,7 @@ export type Props = {
 const Avatar: React.FC<Props> = ({ src, className }) => {
   return (
     <Image
-      className={"w-20 h-20 rounded-full bg-primary-800/20"}
+      className={"rounded-full bg-primary-800/20 h-14 w-14 object-cover"}
       src={src}
       width={100}
       height={20}
