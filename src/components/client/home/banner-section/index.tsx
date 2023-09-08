@@ -20,7 +20,7 @@ const Banner = () => {
           <div className="w-full">
             <div className="flex flex-col gap-3 md:gap-7">
               <h1
-                className="font-bold tracking-tight text-gray-800 text-3xl lg:text-4xl xl:text-5xl sm:leading-loose"
+                className="font-bold tracking-tight text-gray-800 text-3xl lg:text-5xl xl:text-5xl sm:leading-loose"
                 style={{ lineHeight: "1.2" }}
               >
                 Intégrez <span className="text-primary-900">SwyftPay</span> pour
@@ -47,7 +47,7 @@ const Banner = () => {
               {" "}
               <CircleClipPath />
             </div>
-            <div className="absolute top-5 -right-10 xl:-right-24 bottom-9 hidden md:block">
+            <div className="absolute top-5 -right-10 xl:-right-24 bottom-9 hidden lg:block">
               <Image src={BgHiro} width={520} alt="banner-img" className="sm:w-3/5 md:w-3/4 xl:w-11/12 opacity-95" />
             </div>
           </div>
