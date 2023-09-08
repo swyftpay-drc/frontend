@@ -19,7 +19,7 @@ export const LeftClipPath = () => {
         patternUnits="userSpaceOnUse"
       >
         <path
-          className="text-primary-900/60"
+          className="text-primary-900/50"
           fill="currentColor"
           d="M0 0h4v4H0z"
         />

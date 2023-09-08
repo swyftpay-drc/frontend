@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 
-export const CercleClipPath = () => {
+export const CircleClipPath = () => {
   return (
     <svg
-      className="absolute sm:top-24 xl:top-16 sm:right-2 lg:right-8 xl:-right-12 text-primary-900/60 animate-ping duration-500"
+      className="absolute sm:top-24 xl:top-5 sm:right-2 lg:right-8 xl:-right-24 text-primary-900/60 animate-ping duration-500"
       xmlns="http://www.w3.org/2000/svg"
       stroke="currentColor"
       stroke-width="1.5"
