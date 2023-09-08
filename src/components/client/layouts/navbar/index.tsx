@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
     );
   };
   return (
-    <div className="w-full bg-primary-400 relative">
+    <div className="w-full bg-gradient-to-b  from-primary-400 relative">
       <div className="w-full py-4 flex flex-row items-center justify-between mx-auto max-w-7xl px-4 sm:px-6 md:px-8 xl:px-1">
         <div className="flex justify-between items-center p-0 z-50">
           <Link href={"/"} className="hidden xl:flex">
