@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Image, {StaticImageData} from "next/image";
 import React from "react";
 export type Props = {
   subTitle?: string;
   className?: string;
-  src: string;
+  src:  StaticImageData;
 };
 const Avatar: React.FC<Props> = ({ src, className }) => {
   return (

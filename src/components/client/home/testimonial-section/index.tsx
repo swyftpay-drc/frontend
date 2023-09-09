@@ -2,8 +2,7 @@
 import Avatar from "@/components/ui/avatar/Avatar";
 import SectionTitle from "../../layouts/section-title";
 import TestimonialCard from "./Card";
-import { IconPaint, IconCalendar, IconConfig } from "@/components/ui/icons";
-import Image from "next/image";
+import avatar from "@/assets/images/rkota.jpeg";
 
 export type TestimonialSectionProps = {
   title?: string;
@@ -24,21 +23,21 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = ({ title }) => {
           client={{ name: "Rosaire Kota", profession: "Developpeur" }}
           text="Cette plateforme a transformé la gestion de mes finances. Son interface conviviale et ses fonctionnalités puissantes m'ont permis de suivre et de gérer efficacement toutes mes transactions en un seul endroit. Une solution vraiment indispensable."
         >
-          <Avatar src="/docs/images/people/profile-picture-5.jpg" />
+          <Avatar src={avatar} />
         </TestimonialCard>
 
         <TestimonialCard
           client={{ name: "Benjamin Tondase", profession: "Entrepreneur" }}
           text="J'ai cherché pendant longtemps une solution pour centraliser mes investissements en ligne. Cette plateforme offre une intégration fluide avec diverses institutions financières, facilitant la gestion de mon portefeuille. Je la recommande vivement ."
         >
-          <Avatar src="/docs/images/people/profile-picture-5.jpg" />
+          <Avatar src={avatar} />
         </TestimonialCard>
 
         <TestimonialCard
           client={{ name: "Rosaire Kota", profession: "Developpeur" }}
           text="J'ai cherché pendant longtemps une solution pour centraliser mes investissements en ligne. Cette plateforme offre une intégration fluide avec diverses institutions financières, facilitant la gestion de mon portefeuille. Je la recommande vivement ."
         >
-          <Avatar src="/docs/images/people/profile-picture-5.jpg" />
+          <Avatar src={avatar} />
         </TestimonialCard>
       </div>
     </div>
