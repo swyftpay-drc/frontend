@@ -11,7 +11,7 @@ import Image from "next/image";
 const Banner = () => {
   return (
     <>
-      <div className="sm:py-0 relative md:mt-8">
+      <div className="sm:py-0 relative mt-16 xl:mt-20">
         <div className="hidden md:flex">
           {" "}
           <RightClipPath />
