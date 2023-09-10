@@ -34,7 +34,7 @@ const Ourteams = [
 const OurTeam = () => {
   return (
     <div className='py-12'>
-     <SectionTitle title='Notre équipe' className='text-center pb-12'/>
+     <SectionTitle title='Notre équipe' className='text-center pb-12 text-white'/>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-4 md:gap-6 lg:gap-24 py-12">
       {Ourteams.map((item, index) => (
         <CardTeam name={item.name} key={index + "_id"} role={item.role}>
@@ -61,8 +61,8 @@ export type Props = {
           {children}
         </div>
         <div className="flex flex-col gap-2 justify-center items-center">
-          <h6 className="text-text-primary font-bold text-xl">{name}</h6>
-          <p className="text-text-primary font-light">{role}</p>
+          <h6 className=" font-bold text-xl text-white">{name}</h6>
+          <p className="text-white/80 font-light">{role}</p>
         </div>
       </div>
     );

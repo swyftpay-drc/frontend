@@ -35,7 +35,7 @@ const Icon: React.FC<IconProps> = ({ id, open }) => {
   );
 };
 
-export function AccordionCustomIcon() {
+export const AccordionCustom =() =>{
   const [open, setOpen] = React.useState(0);
   const [alwaysOpen, setAlwaysOpen] = React.useState(true);
 
@@ -46,7 +46,7 @@ export function AccordionCustomIcon() {
   return (
     <>
       <div className="md:pl-10 md:pr-10 pl-4 pr-4">
-        <Accordion open={open === 0} icon={<IconPlus id={1} open={open} />}>
+        <Accordion open={open === 0} icon={<IconPlus id={1} open={open} className='text-primary-900'/>}>
           <AccordionHeader onClick={() => handleOpen(1)}>
             SwyftPay Transaction : comment effectué une transaction ?
           </AccordionHeader>
