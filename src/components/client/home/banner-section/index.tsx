@@ -20,7 +20,7 @@ const Banner = () => {
           <div className="w-full">
             <div className="flex flex-col gap-3 md:gap-7">
               <h1
-                className="font-bold tracking-tight text-gray-800 text-3xl lg:text-5xl xl:text-5xl sm:leading-loose"
+                className="font-bold tracking-tight text-gray-800 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl sm:leading-loose"
                 style={{ lineHeight: "1.2" }}
               >
                 Intégrez <span className="text-primary-900">SwyftPay</span> pour

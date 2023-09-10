@@ -21,7 +21,7 @@ const PaymentSection: React.FC<PaymentSectionProps> = ({ title }) => {
         sécurité de vos transactions électroniques..
       </p>
 
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-24 py-12">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:grid-cols-3 lg:gap-8 xl:gap-24 py-12">
         <PaymentCard
           title="Planification financière détaillée"
           text="Nous élaborons des plans financiers complets, adaptés à vos besoins spécifiques pour vous guider vers l'indépendance financière."

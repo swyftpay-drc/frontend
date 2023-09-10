@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
     );
   };
   return (
-    <div className={`w-full ${ isSticky?'bg-white/90 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] ':'bg-primary-400 '} transition-all duration-300 ease-in-out fixed top-0 z-50`}>
+    <div className={`w-full ${ isSticky?'bg-white/90 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] ':'bg-transparent'} transition-all duration-300 ease-in-out fixed top-0 z-50`}>
       <div className="w-full py-3 flex flex-row items-center justify-between mx-auto max-w-7xl px-4 sm:px-6 md:px-8 xl:px-1">
         <div className="flex justify-between items-center p-0 z-50">
           <Link href={"/"} className="hidden xl:flex">

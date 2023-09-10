@@ -18,7 +18,7 @@ const TestimonialSection: React.FC<TestimonialSectionProps> = ({ title }) => {
       Découvrez les avis de nos clients, la voix la plus crédible de notre entreprise. Leurs retours nous aident à nous améliorer continuellement et témoignent de notre engagement à offrir des solutions financières exceptionnelles. Nous sommes fiers de partager leurs expériences positives, car elles renforcent notre réputation en tant que partenaire financier de confiance.
       </p>
 
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-24 py-12" data-aos="fade-up">
+      <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-6 lg:grid-cols-3 lg:gap-8 xl:gap-24 py-12" data-aos="fade-up">
         <TestimonialCard
           client={{ name: "Rosaire Kota", profession: "Developpeur" }}
           text="Cette plateforme a transformé la gestion de mes finances. Son interface conviviale et ses fonctionnalités puissantes m'ont permis de suivre et de gérer efficacement toutes mes transactions en un seul endroit. Une solution vraiment indispensable."
