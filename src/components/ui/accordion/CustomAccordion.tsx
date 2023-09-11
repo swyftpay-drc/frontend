@@ -18,7 +18,7 @@ export const CustomAccordion: React.FC<Props> = ({title, content, defaultOpen, c
     };
 
     return (
-        <div className={`w-full transition-transform duration-500 ease-in-out my-3 rounded-2xl ${ isOpen?'bg-white/90 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] mb-12':'bg-transparent'}  `}>
+        <div className={`w-full border transition-transform duration-500 ease-in-out my-3 rounded-2xl ${ isOpen?'bg-white/90 border-0 shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] mb-12':'bg-transparent'}  `}>
             <button
                 onClick={toggleAccordion}
                 className="w-full flex justify-between items-center px-4 py-2 text-text-primary font-bold text-2xl focus:outline-none"
