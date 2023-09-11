@@ -2,7 +2,7 @@ import React from "react";
 export type Props = {
   id?: number;
   className?: string;
-  open?: number;
+  open?: number|boolean;
 };
 export const IconPlus: React.FC<Props> = ({ className, id, open }) => {
   return (

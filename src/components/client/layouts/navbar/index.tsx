@@ -11,7 +11,7 @@ const navigations = [
   { name: "Comment ça marche", path: "/how-kit-works" },
   { name: "A propos", path: "/about" },
   { name: "Services", path: "/" },
-  { name: "Développeurs", path: "/" },
+  { name: "Développeurs", path: "/docs" },
   { name: "Contact", path: "/" },
 ];
 

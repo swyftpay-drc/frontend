@@ -14,3 +14,5 @@ export {IconTwitter} from "./Twitter"
 export {IconMail} from './Mail'
 export {IconPlus} from './Plus'
 
+export {MinusIcon as IconMinus } from './Minus'
+
