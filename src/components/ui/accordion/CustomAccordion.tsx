@@ -36,7 +36,7 @@ export const CustomAccordion: React.FC<Props> = ({title, content, defaultOpen, c
           )}
         </span>
             </button>
-            <Collapse isOpened={isOpen}>
+            <Collapse isOpened={isOpen as boolean}>
                 <div
                     className={`p-4 transition-transform duration-200 ease-in-out motion-reduce:transition-none ${
                         isOpen ? 'block' : 'hidden'
