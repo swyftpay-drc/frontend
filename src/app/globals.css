@@ -33,3 +33,6 @@
 body {
   background: var(--white-color);
 }
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
