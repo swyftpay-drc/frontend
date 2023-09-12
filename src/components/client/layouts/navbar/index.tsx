@@ -10,7 +10,7 @@ import { IconClose } from "@/components/ui/icons";
 const navigations = [
   { name: "Comment ça marche", path: "/how-kit-works" },
   { name: "A propos", path: "/about" },
-  { name: "Services", path: "/" },
+  { name: "Services", path: "/services" },
   { name: "Développeurs", path: "/" },
   { name: "Contact", path: "/" },
 ];
