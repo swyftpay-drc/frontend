@@ -9,7 +9,15 @@ import Image from "next/image";
 import BgHiro from "@/assets/images/Carte.jpg";
 import Flux from "@/assets/images/Flux.jpg";
 import ServiceCards from "./servicesCards";
-import { IconPlanning } from "@/components/ui/icons";
+import {
+  IconBilling,
+  IconCreditCard,
+  IconPayment,
+  IconPlanning,
+  IconSecure,
+  IconTransaction,
+  IconWallet,
+} from "@/components/ui/icons";
 
 export type Props = {
   title?: string;
@@ -46,7 +54,7 @@ const ServicesSection: React.FC<Props> = (props) => {
               </p>
               <div className="hidden lg:block">
                 <Button handleClick={(e) => {}} variant="outlined">
-                  En savoir plus
+                  S{"'"}inscrire maintenant
                 </Button>
               </div>
             </div>
@@ -59,7 +67,7 @@ const ServicesSection: React.FC<Props> = (props) => {
             </div>
             <div className="block md:hidden">
               <Button handleClick={(e) => {}} variant="outlined">
-                En savoir plus
+                S{"'"}inscrire maintenant
               </Button>
             </div>
           </div>
@@ -89,42 +97,42 @@ const ServicesSection: React.FC<Props> = (props) => {
           <div>
             <div className="flex flex-col gap-6 md:flex-row ">
               <ServiceCards
-                title="Planification financière détaillée"
-                text="Lorem ipsum dolor sit amet cons Volutpat consectetur morbi enim mauris.."
+                title="Transactions en temps réel"
+                text="SwyftPay permet de suivre les transactions en temps réel."
               >
-                <IconPlanning />
+                <IconTransaction />
               </ServiceCards>
               <ServiceCards
-                title="Planification financière détaillée"
-                text="Lorem ipsum dolor sit amet cons Volutpat consectetur morbi enim mauris.."
+                title="Paiement multiple"
+                text="SwyftPay prend en charge plusieurs méthodes de paiement, y compris les cartes de crédit."
               >
-                <IconPlanning />
+                <IconPayment />
               </ServiceCards>
               <ServiceCards
-                title="Planification financière détaillée"
-                text="Lorem ipsum dolor sit amet cons Volutpat consectetur morbi enim mauris.."
+                title="Transaction sécurisée"
+                text="SwyftPay utilise des mesures de sécurité robustes."
               >
-                <IconPlanning />
+                <IconSecure />
               </ServiceCards>
             </div>
             <div className="flex flex-col gap-6 md:flex-row md:py-10">
               <ServiceCards
-                title="Planification financière détaillée"
+                title="Carte de crédit virtuelle"
                 text="Lorem ipsum dolor sit amet cons Volutpat consectetur morbi enim mauris.."
               >
-                <IconPlanning />
+                <IconCreditCard />
               </ServiceCards>
               <ServiceCards
-                title="Planification financière détaillée"
+                title="Portefeuille numérique intégré"
                 text="Lorem ipsum dolor sit amet cons Volutpat consectetur morbi enim mauris.."
               >
-                <IconPlanning />
+                <IconWallet />
               </ServiceCards>
               <ServiceCards
-                title="Planification financière détaillée"
-                text="Lorem ipsum dolor sit amet cons Volutpat consectetur morbi enim mauris.."
+                title="Facturation récurrente"
+                text="SwyftPay offre des fonctions permettant de mettre en place des paiements récurrents."
               >
-                <IconPlanning />
+                <IconBilling />
               </ServiceCards>
             </div>
           </div>
