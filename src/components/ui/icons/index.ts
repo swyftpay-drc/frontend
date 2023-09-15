@@ -12,4 +12,14 @@ export {IconFacebook} from "./Facebook"
 export {IconLinkedin} from "./Linkedin"
 export {IconTwitter} from "./Twitter"
 export {IconMail} from './Mail'
+export {IconPlus} from './Plus'
+export {IconPlanning} from "./Planning"
+export {IconBilling} from "./Billing"
+export {IconCreditCard} from "./CreditCard"
+export {IconPayment} from "./Payment"
+export {IconSecure} from "./Secure"
+export {IconTransaction} from "./Transaction"
+export {IconWallet} from "./Wallet"
+
+export {MinusIcon as IconMinus } from './Minus'
 

@@ -4,7 +4,7 @@ import React from "react";
 export const RightClipPath = () => {
   return (
     <svg
-    className="absolute -bottom-32 -right-28 animate-pulse"
+    className="absolute sm:-bottom-12 xl:-bottom-52  sm:right-2 lg:right-8 xl:-right-28 animate-pulse"
     width="200"
     height="200"
     fill="none"
@@ -24,7 +24,7 @@ export const RightClipPath = () => {
           y="0"
           width="4"
           height="4"
-          className="text-primary-900/60"
+          className="text-primary-900/50"
           fill="currentColor"
         />
       </pattern>

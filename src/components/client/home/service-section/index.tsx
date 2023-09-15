@@ -11,10 +11,16 @@ export type ServiceSectionProps = {
 };
 const ServiceSection: React.FC<ServiceSectionProps> = (props) => {
   return (
-    <div className="h-full w-full py-32">
+    <div className="h-full w-full py-32 sm:-pt-10">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-24">
         <div>
-          <Image src={ServiceImg} alt="test" className="w-auto" data-aos="fade-right"/>
+          <Image
+            src={ServiceImg}
+            alt="test"
+            className="w-full"
+
+            data-aos="fade-right"
+          />
         </div>
         <div className="flex flex-col gap-6 md:gap-12" data-aos="fade-left">
           <SectionTitle

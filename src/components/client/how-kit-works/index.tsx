@@ -3,7 +3,7 @@
 import { BaseContainer } from "@/components/ui/container/BaseContainer";
 import Header from "../layouts/navbar";
 import Footer from "../layouts/footer";
-import { AccordionCustomIcon, BaseAccordion } from "@/components/ui/accordion";
+import { AccordionCustom } from "@/components/ui/accordion";
 import BannerSection from "../layouts/banner-section";
 
 export type Props = {
@@ -18,9 +18,9 @@ const HowKitWorksSection: React.FC<Props> = (props) => {
         title="Comment ça marche"
         subTitle=" Transaction - Fonctionnalité - Documentation"
       />
-      <div className="h-full w-full py-32">
+      <div className="h-full w-full py-20">
         <BaseContainer className="">
-          <AccordionCustomIcon />
+          <AccordionCustom />
         </BaseContainer>
       </div>
       <Footer />

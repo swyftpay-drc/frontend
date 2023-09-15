@@ -1,10 +1,10 @@
-'use client'
-import React from 'react'
+"use client";
+import React from "react";
 
 export const LeftClipPath = () => {
   return (
     <svg
-    className="absolute -top-10 right-80 animate-pulse"
+    className="absolute xl:-top-10 sm:-top-24 sm:right-52 xl:right-96 animate-pulse"
     width="200"
     height="200"
     fill="none"
@@ -19,7 +19,7 @@ export const LeftClipPath = () => {
         patternUnits="userSpaceOnUse"
       >
         <path
-          className="text-primary-900/60"
+          className="text-primary-900/50"
           fill="currentColor"
           d="M0 0h4v4H0z"
         />

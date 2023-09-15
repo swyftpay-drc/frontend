@@ -15,7 +15,7 @@ const TestimonialCard: React.FC<Props> = ({
   text,
 }) => {
   return (
-    <div className="shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] hover:shadow-2xl hover:shadow-primary-900/20 flex flex-col gap-3 bg-white p-6 py-4 rounded-xl text-left">
+    <div className="overflow-hidden shadow-[rgba(7,_65,_210,_0.1)_0px_9px_30px] hover:shadow-2xl hover:shadow-primary-900/20 flex flex-col gap-3 bg-white p-6 py-4 rounded-xl text-left">
       <p className="text-gray-800 w-full">{text}</p>
       <div className="flex gap-4">
         <div className="rounded-full">{children}</div>
