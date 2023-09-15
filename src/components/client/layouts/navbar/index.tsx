@@ -2,6 +2,7 @@
 import { BaseContainer } from "@/components/ui/container/BaseContainer";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { useRouter } from 'next/navigation'
 import React, {useEffect, useState} from "react";
 import { Logo } from "@/components/logo";
 import { IconMenu } from "@/components/ui/icons/Menu";
@@ -17,6 +18,7 @@ const navigations = [
 
 const Navbar: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const router = useRouter()
   const [isActive, setIsActive] = useState(false);
   const [isSticky, setIsSticky]= useState(false);
 
@@ -27,13 +29,7 @@ const Navbar: React.FC = () => {
     }
     setIsSticky(false)
   }
-  useEffect(() => {
-    document.addEventListener('scroll', handleSticky);
-    return () => {
-      document.removeEventListener('scroll', handleSticky);
-    };
-  }, []);
-
+ 
 
   const handleActiveMenu = () => {
     setIsActive(true);
@@ -41,6 +37,16 @@ const Navbar: React.FC = () => {
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
+  const redirectTo = () => {
+    router.push('/auth/signin')
+  }
+
+  useEffect(() => {
+    document.addEventListener('scroll', handleSticky);
+    return () => {
+      document.removeEventListener('scroll', handleSticky);
+    };
+  }, []);
 
   const renderNavigations = () => {
     return (
@@ -128,7 +134,7 @@ const Navbar: React.FC = () => {
               {renderNavigations()}
 
               <div className="flex flex-col gap-3">
-                <Button handleClick={(e) => {}} variant="outlined">
+                <Button handleClick={() => router.push('auth/signin')} variant="outlined">
                   Connexion
                 </Button>
                 <Button handleClick={(e) => {}} variant="contained">
