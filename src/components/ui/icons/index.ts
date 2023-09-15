@@ -20,3 +20,6 @@ export {IconPayment} from "./Payment"
 export {IconSecure} from "./Secure"
 export {IconTransaction} from "./Transaction"
 export {IconWallet} from "./Wallet"
+
+export {MinusIcon as IconMinus } from './Minus'
+

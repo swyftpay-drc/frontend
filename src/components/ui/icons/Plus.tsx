@@ -2,7 +2,7 @@ import React from "react";
 export type Props = {
   id?: number;
   className?: string;
-  open?: number;
+  open?: number|boolean;
 };
 export const IconPlus: React.FC<Props> = ({ className, id, open }) => {
   return (
@@ -11,7 +11,7 @@ export const IconPlus: React.FC<Props> = ({ className, id, open }) => {
       width="16"
       height="16"
       viewBox="0 0 16 16"
-      className={`${
+      className={`${className} text-primary-900 ${
         id === open ? "rotate-180" : ""
       } h-5 w-5 transition-transform`}
     >

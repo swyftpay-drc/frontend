@@ -16,12 +16,12 @@ const About:React.FC<Props> = () => {
   return (
     <>
        <Header />
-      <BannerSection title='Qui sommes-nous ?' subTitle='Vision - Mission - Team'/>
+      <BannerSection title='Qui sommes-nous ?' subTitle='Vision - Mission - Team' />
       <BaseContainer className='py-12 relative'>
       <MissionVisionSection/>
       <OurResults/>
       </BaseContainer>
-      <div className='w-full bg-primary-800/5'>
+      <div className='w-full bg-primary-800 relative'>
       <BaseContainer>
       <OurTeam/>
       </BaseContainer>

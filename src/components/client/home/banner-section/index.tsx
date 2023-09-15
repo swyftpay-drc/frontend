@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import {
-  CercleClipPath,
+  CircleClipPath,
   LeftClipPath,
   RightClipPath,
 } from "@/components/ui/clip-path";
@@ -11,7 +11,7 @@ import Image from "next/image";
 const Banner = () => {
   return (
     <>
-      <div className="sm:py-0 relative md:mt-8">
+      <div className="sm:py-0 relative mt-16 xl:mt-20">
         <div className="hidden md:flex">
           {" "}
           <RightClipPath />
@@ -20,7 +20,7 @@ const Banner = () => {
           <div className="w-full">
             <div className="flex flex-col gap-3 md:gap-7">
               <h1
-                className="font-bold tracking-tight text-gray-800 text-3xl sm:text-4xl lg:text-5xl sm:leading-loose"
+                className="font-bold tracking-tight text-gray-800 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl sm:leading-loose"
                 style={{ lineHeight: "1.2" }}
               >
                 Intégrez <span className="text-primary-900">SwyftPay</span> pour
@@ -45,14 +45,10 @@ const Banner = () => {
           <div className="relative">
             <div className="hidden md:flex">
               {" "}
-              <CercleClipPath />
+              <CircleClipPath />
             </div>
-            <div className="absolute top-5 -right-10 bottom-9 md:relative hidden md:block md:-right-0 md:top-16 lg:absolute lg:top-5 lg:-right-20 lg:bottom-9 z-40">
-              <Image
-                src={BgHiro}
-                className="w-80 md:w-full lg:w-11/12"
-                alt=""
-              />
+            <div className="absolute top-5 -right-10 xl:-right-24 bottom-9 hidden lg:block z-20">
+              <Image src={BgHiro} width={520} alt="banner-img" className="sm:w-3/5 md:w-3/4 xl:w-11/12 opacity-95" />
             </div>
           </div>
         </div>
